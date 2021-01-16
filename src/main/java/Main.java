@@ -41,12 +41,12 @@ public class Main {
             array4[i][j] = 1;
         }
         //task4 visualisation
-//        for (int i =0; i<array4.length;i++){
-//            for (int j = 0; j<array4[i].length;j++) {
-//                System.out.print(" "+array4[i][j]+" " );
-//            }
-//            System.out.println();
-//        }
+        for (int i =0; i<array4.length;i++){
+            for (int j = 0; j<array4[i].length;j++) {
+                System.out.print(" "+array4[i][j]+" " );
+            }
+            System.out.println();
+        }
 
         //task5
         int[] array5 = new int[]{5,5,3,4,8,152,2,0,815,54,7,784,2,4,12,6,-2,-52,121,-127,144,23};
@@ -60,14 +60,14 @@ public class Main {
                 t5min = array5[i];
             }
         }
-        //System.out.println(t5max+" "+t5min);
+        System.out.println(t5max+" "+t5min);
 
         //task6
         int[] array6 = new int[]{2,3,1,4,2,5,1,2};
         int[] array6_2 = new int[]{5,2,1,100};
 
-        //System.out.println(task6(array6));
-        //System.out.println(task6(array6_2));
+        System.out.println(task6(array6));
+        System.out.println(task6(array6_2));
 
         //task7
         int[] array7 = new int[]{1,2,3,4,5,6,7,8,9};
