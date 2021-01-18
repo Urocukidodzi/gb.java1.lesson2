@@ -75,6 +75,12 @@ public class Main {
 
         task7(array7, -2);
         task7(array7_2, 3);
+//        System.out.println(array7);
+//        System.out.println(array7_2);
+        for (int i:array7) {
+            System.out.print(" "+i);
+        }
+        System.out.println();
 
     }
 
@@ -113,18 +119,20 @@ public class Main {
     }
 
     public static boolean task6(int[] array){
-        int sum=0;
         int leftSum=0;
-        for (int i = 0; i< array.length;i++) {
-            sum+=array[i];
-        }
-        for (int i = 0; i< array.length;i++){
-            leftSum+=array[i];
-            if(sum/leftSum==2){
-                return true;
+        int rightSum=0;
+
+        for (int i=1; i<array.length-1; i++ ){
+            for (int j= 0 ; j < i ; j++){
+                leftSum+=array[j];
             }
+            for (int k = array.length-1 ; k >= i; k--){
+                rightSum+=array[k];
+            }
+            if (leftSum==rightSum){return true;}
 
         }
         return false;
+
     }
 }
